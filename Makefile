@@ -1,6 +1,6 @@
 .PHONY: 
 
-NAME=Makefile
+NAME=e003
 
 All: gcc run
 
@@ -11,6 +11,9 @@ run:
 	./$(NAME).out
 
 git:
-	git add $(NAME)
+	git add $(NAME).c
 	git commit -m "$(NAME)"
 	git push
+
+cp:
+	cp e000.c $(NAME).c
